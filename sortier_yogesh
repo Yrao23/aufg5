@@ -1,0 +1,40 @@
+"""
+TU Berlin
+Einführung in die Informationstechnik für Ingenieure
+
+Vorgaben zu Aufgabe 05 - Kontrollstrukturen II
+"""
+
+mix = [51, 0, "Q", "LISTE", 4.3, {"null" : 0, "eins" : 1, "zwei" : 2}, -1, "Tupel", 1, "False", 3 > 5, "hell", 666, "dictionaries", True, 42.42]
+
+# START TODO ###################
+ints = []
+doubles = []
+strings = []
+dicts = []
+for element in mix:
+    if type(element) == bool:
+        break
+    elif type(element) == int:
+        ints.extend([element])
+    elif type(element) == float:
+        doubles.extend([element])
+    elif type(element) == str:
+        strings.extend([element])
+    elif type(element) == dict:
+        dicts.extend([element])
+
+
+# Ausgaben der Listen
+print("\nSortierte Listen: ")
+print("\nints: ", ints)
+print("\ndoubles: ", doubles)
+print("\nstrings: ", strings)
+print("\ndicts: ", dicts)
+
+# Ausgabe der Summe von allen eingelesenen Zahlen
+summe = sum(ints) + sum(doubles)
+print("\nsumme: ", summe)
+
+
+# END TODO #####################
